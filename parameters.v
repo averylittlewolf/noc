@@ -29,6 +29,10 @@
 // router configuration options
 //==============================================================================
 
+`include "rtr_constants.v"
+`include "c_constants.v"
+`include "vcr_constants.v"
+
 // select network topology
 parameter topology = `TOPOLOGY_MESH;
 

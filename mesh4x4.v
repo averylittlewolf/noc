@@ -517,9 +517,14 @@ module mesh4x4 (
     wire    [0:(num_routers*channel_width)     -1  ]   ejection_channels           ;
     wire    [0:(num_routers*flow_ctrl_width)   -1  ]   ejection_flow_ctrl          ;
 
+
+	// JYK added
     wire    [0:(num_routers*32)                -1  ]   sent_flits_count_all        ;
     wire    [0:(num_routers*32)                -1  ]   received_flits_count_all    ;
 
+
+	// AXI interface to XTOR (SCE-MI), Registers storing statistic info
+	// flits counts sent and received
     reg     [31: 0]         flits_count_sent_router_00      ;
     reg     [31: 0]         flits_count_sent_router_01      ;
     reg     [31: 0]         flits_count_sent_router_02      ;
@@ -560,6 +565,7 @@ module mesh4x4 (
     // Currently config the packet_type for packet_source module
     reg     [31: 0]         router_config                   ;
 
+    // Configure seed value for packet source
     always @(posedge ACLK) begin
         if (~ARESETn) begin
             seed    [31: 0] <=  32'h0   ;
