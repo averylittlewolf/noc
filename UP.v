@@ -122,25 +122,25 @@ module UP;
 
     mesh3x3     mesh3x3_inst 
     (
-        .ACLK                       ( clk               ), 
-        .ARESETn                    ( n_reset           ),
-        .AWADDR              ( AWADDR [31: 0]    ),
-        .AWVALID                    ( AWVALID           ),
-        .WVALID                     ( WVALID            ),
-        .WDATA      [31: 0]         ( WDATA  [31: 0]    ),
-        .AWID       [ 3: 0]         ( AWID   [ 3: 0]    ),
-        .BREADY                     ( BREADY            ),
-        .AWREADY                    ( AWREADY           ),
-        .WREADY                     ( WREADY            ),
-        .BVALID                     ( BVALID            ),
-        .BRESP      [ 1: 0]         ( BRESP  [ 1: 0]    ),
-        .ARADDR     [31: 0]         ( ARADDR [31: 0]    ),
-        .ARVALID                    ( ARVALID           ),
-        .RREADY                     ( RREADY            ),
-        .RID        [ 3: 0]         ( RID    [ 1: 0]    ),
-        .RDATA      [31: 0]         ( RDATA  [31: 0]    ),
-        .RRESP      [ 1: 0]         ( RRESP  [ 1: 0]    ),
-        .RVALID                     ( RVALID            )
+        .ACLK		( clk		), 
+        .ARESETn	( n_reset	),
+        .AWADDR		( AWADDR 	),
+        .AWVALID	( AWVALID	),
+        .WVALID		( WVALID	),
+        .WDATA		( WDATA 	),
+        .AWID		( AWID		),
+        .BREADY		( BREADY	),
+        .AWREADY	( AWREADY	),
+        .WREADY		( WREADY	),
+        .BVALID		( BVALID	),
+        .BRESP		( BRESP		),
+        .ARADDR		( ARADDR	),
+        .ARVALID	( ARVALID	),
+        .RREADY		( RREADY	),
+        .RID		( RID		),
+        .RDATA		( RDATA		),
+        .RRESP		( RRESP		),
+        .RVALID		( RVALID	)
 
     );
 
