@@ -526,7 +526,7 @@ module testbench
     assign flow_ctrl_router_1_op_0      =       flow_ctrl_router_0_ip_1                                     ;
     assign flow_ctrl_router_1_op_1      =       flow_ctrl_router_2_ip_0                                     ;
     assign flow_ctrl_router_1_op_2      =       {flow_ctrl_width{1'b0}}                                     ;
-    assign flow_ctrl_router_1_op_3      =       flow_ctrl_router_4_ip_2                                     ;
+    assign flow_ctrl_router_1_op_3      =       flow_ctrl_router_5_ip_2                                     ;
     assign flow_ctrl_router_1_op_4      =       ejection_flow_ctrl[1*flow_ctrl_width:(2*flow_ctrl_width)-1] ;
 
     //*******************************************************************************************************
@@ -718,12 +718,12 @@ module testbench
     assign channel_router_15_ip_1        =       {channel_width{1'b0}}                                          ;
     assign channel_router_15_ip_2        =       channel_router_11_op_3                                         ;
     assign channel_router_15_ip_3        =       {channel_width{1'b0}}                                          ;
-    assign channel_router_15_ip_4        =       injection_channels[14*channel_width:(15*channel_width)-1]      ;
+    assign channel_router_15_ip_4        =       injection_channels[15*channel_width:(16*channel_width)-1]      ;
     assign flow_ctrl_router_15_op_0      =       flow_ctrl_router_14_ip_1                                       ;
     assign flow_ctrl_router_15_op_1      =       {flow_ctrl_width{1'b0}}                                        ;
     assign flow_ctrl_router_15_op_2      =       flow_ctrl_router_11_ip_3                                       ;
     assign flow_ctrl_router_15_op_3      =       {flow_ctrl_width{1'b0}}                                        ;
-    assign flow_ctrl_router_15_op_4      =       ejection_flow_ctrl[14*flow_ctrl_width:(15*flow_ctrl_width)-1]  ;
+    assign flow_ctrl_router_15_op_4      =       ejection_flow_ctrl[15*flow_ctrl_width:(16*flow_ctrl_width)-1]  ;
 
 	//connected routers to flit_sink and packet_source
 	assign injection_flow_ctrl  [0*flow_ctrl_width  :   (1*flow_ctrl_width) -1  ]       = flow_ctrl_router_0_ip_4   ;

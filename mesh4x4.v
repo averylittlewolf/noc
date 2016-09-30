@@ -1068,7 +1068,7 @@ module mesh4x4 (
     assign flow_ctrl_router_1_op_0      =       flow_ctrl_router_0_ip_1                                     ;
     assign flow_ctrl_router_1_op_1      =       flow_ctrl_router_2_ip_0                                     ;
     assign flow_ctrl_router_1_op_2      =       {flow_ctrl_width{1'b0}}                                     ;
-    assign flow_ctrl_router_1_op_3      =       flow_ctrl_router_4_ip_2                                     ;
+    assign flow_ctrl_router_1_op_3      =       flow_ctrl_router_5_ip_2                                     ;
     assign flow_ctrl_router_1_op_4      =       ejection_flow_ctrl[1*flow_ctrl_width:(2*flow_ctrl_width)-1] ;
 
     //*******************************************************************************************************
